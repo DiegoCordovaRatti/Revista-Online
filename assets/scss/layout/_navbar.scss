@@ -1,0 +1,27 @@
+.navbar {
+    width: 960px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+
+    .navbar__logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .navbar__list-container {
+        display: inline-block;
+        width: 840px;
+        text-align: right;
+
+        .navbar__link {
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .navbar__search-bar {
+            border-radius: 30px;
+        }
+    }
+}
+
