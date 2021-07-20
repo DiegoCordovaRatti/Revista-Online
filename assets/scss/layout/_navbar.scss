@@ -1,27 +1,43 @@
 .navbar {
-    width: 960px;
+    width: 100%;
     padding: 10px;
     border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
 
     .navbar__logo {
         font-size: 24px;
         font-weight: bold;
         text-transform: uppercase;
-        display: inline-block;
-    }
-
-    .navbar__list-container {
-        display: inline-block;
-        width: 840px;
-        text-align: right;
-
-        .navbar__link {
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        .navbar__search-bar {
-            border-radius: 30px;
-        }
+        width: 10%;
     }
 }
 
+.navbar__list-container {
+    display: inline-block;
+    width: auto;
+    text-align: right;
+    margin-left: auto;
+
+    .navbar__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        .navbar__list-item {
+            display: flex;
+            align-items: center;
+
+            .navbar__link {
+                text-decoration: none;
+                text-transform: uppercase;
+                margin: 0 1em;
+            }
+
+            .navbar__search-bar {
+                border-radius: 30px;
+                margin: 0 1em;
+            }
+        }
+    }
+}
