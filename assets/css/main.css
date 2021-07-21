@@ -20,15 +20,15 @@ body {
 }
 
 .main-container {
-  width: 100vw;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 
 .navbar {
   width: 100%;
-  padding: 10px;
   border-bottom: 1px solid gray;
   display: flex;
+  padding: 0;
   align-items: center;
 }
 .navbar .navbar__logo {
@@ -63,35 +63,61 @@ body {
   margin: 0 1em;
 }
 
+@media only screen and (max-width: 991px) {
+  .navbar__link.navbar__link--disappear {
+    display: none;
+  }
+}
 .hero-section {
-  width: 960px;
-  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  text-align: center;
 }
 
+@media only screen and (max-width: 991px) {
+  .hero-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
 .article {
-  width: 700px;
-  float: left;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+  grid-gap: 20px;
 }
 .article .article__grid-container {
-  width: 210px;
-  display: inline-block;
-  margin: 5px;
+  width: 100%;
   cursor: pointer;
 }
 .article .article__grid-container .article__grid-image {
-  width: 210px;
-  height: 300px;
+  width: 100%;
+  height: auto;
 }
 .article .article__grid-container .article__grid-text {
   padding: 5px 10px;
 }
 
-.aside {
-  width: 220px;
-  float: right;
+@media only screen and (max-width: 991px) {
+  .article {
+    width: 100%;
+  }
 }
-.aside .aside__header {
-  width: 220px;
+.aside {
+  width: 80%;
+}
+
+@media only screen and (max-width: 991px) {
+  .aside {
+    width: 100%;
+  }
+}
+.aside__header {
+  width: 100%;
   border-bottom: 1px solid gray;
 }
 
@@ -101,11 +127,15 @@ body {
 .aside__tags .aside__list {
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 .aside__tags .aside__list .aside__list-item {
-  padding: 2px 4px;
+  width: 25%;
+  text-align: center;
+  padding: 2px;
+  margin: 0 5%;
   background-color: steelblue;
-  margin-right: 1px;
   color: white;
 }
 
@@ -113,12 +143,12 @@ body {
   margin-bottom: 50px;
 }
 .aside__news-container .aside__news-image {
-  width: 220px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
 
 .section {
-  width: 960px;
+  width: 100%;
   background-color: #f2f4f5;
   text-align: center;
   padding-top: 30px;
@@ -129,7 +159,7 @@ body {
 }
 
 .footer {
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }

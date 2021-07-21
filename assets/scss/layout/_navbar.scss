@@ -1,8 +1,8 @@
 .navbar {
     width: 100%;
-    padding: 10px;
     border-bottom: 1px solid gray;
     display: flex;
+    padding: 0;
     align-items: center;
 
     .navbar__logo {
@@ -40,4 +40,11 @@
             }
         }
     }
+}
+
+@media only screen and (max-width:991px) {
+    .navbar__link.navbar__link--disappear{
+        display: none;
+    }
+    
 }
