@@ -1,10 +1,9 @@
 .section {
     width: 100%;
-    background-color: #f2f4f5;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: $x-large;
     .section__title {
-        font-size: 24px
+        font-size: $x-large;
+        font-weight: $weight-black;
     }
 }

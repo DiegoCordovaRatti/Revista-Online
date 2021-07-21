@@ -1,31 +1,28 @@
 //Color Schemes
-//First color scheme
-
-//Second color scheme
-
-
-//Third color scheme
-
-
-//Fourth color scheme
-
+// color scheme
+$honeydew: #F1FDF3;
+$harp: #E5F4E7;
+$surf-crest: #D1E9D2;
+$green-spring: #99CDA9;
+$dark-jungle: #231E23;
 
 // Typography
 //Font Families
+$noto: 'Noto Sans JP', sans-serif;
 
 // Typography
 // Font Weight
-// $regular: 400;
-// $semi-bold: 600;
-// $bold: 700;
+$weight-regular: 400;
+$weight-bold: 700;
+$weight-black: 900;
 
 // Typography
 // Font Sizes
-// $xxxx-large: 130px;
-// $xxx-large: 100px;
-// $xx-large: 30px;
-// $x-large: 20px;
-// $large: 18px;
-// $medium: 16px;
-// $small: 14px;
-// $x-small: 12px;
+$xxxx-large: 4.375em;
+$xxx-large: 3.125em;
+$xx-large: 1.875em;
+$x-large: 1.25em;
+$large: 1.125em;
+$medium: 1em;
+$small: .875em;
+$x-small: .75em;

@@ -5,6 +5,11 @@
         width: 100%;
         cursor: pointer;
 
+        .article__grid-title {
+            font-size: $x-large;
+            font-weight: $weight-bold;
+        }
+
         .article__grid-image {
             width: 100%;
             object-fit: cover;
@@ -12,16 +17,18 @@
 
         .article__grid-text {
             padding: 5px 10px;
+            font-size: $medium;
         }
     }
 }
 
 @media only screen and (max-width:991px) {
-    .article{
+    .article {
         width: 100%;
     }
-    .article__grid-image{
+
+    .article__grid-image {
         height: 200px;
     }
-    
+
 }
